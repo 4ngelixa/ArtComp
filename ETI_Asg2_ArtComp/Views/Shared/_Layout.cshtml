@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lion City University Competitions</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        @if (Context.Session.GetString("Role") == "Admin")
+        {
+            @await Html.PartialAsync("_AdminMenu.cshtml")
+        }
+        else if (Context.Session.GetString("Role") == "Judge")
+        {
+            @await Html.PartialAsync("_JudgeMenu.cshtml")
+        }
+        else if (Context.Session.GetString("Role") == "Competitor")
+        {
+            @await Html.PartialAsync("_CompetitorMenu.cshtml")
+        }
+        else
+        {
+            @await Html.PartialAsync("_MainMenu.cshtml")
+        }
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class=" text-center border-top footer text-muted bg-light fixed-bottom">
+        <div class="container ">
+            <a href="mailto:contact@lcu.edu.sg">Contact Us</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

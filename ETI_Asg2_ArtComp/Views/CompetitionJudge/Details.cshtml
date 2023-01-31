@@ -1,0 +1,60 @@
+﻿@model IEnumerable<WEB2021Apr_P04_T4.Models.Judge>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h4 class="PageTitle">View Competition Judges</h4>
+<hr />
+<fieldset class="FormContent">
+    <div class="form-group row" style="margin-bottom: 0px;">
+        <label class="col col-form-label text-center">
+            @ViewData["CompetitionName"]
+        </label>
+    </div>
+    @if ((ViewData["EndDate"] != null && Convert.ToDateTime(ViewData["EndDate"]) > DateTime.Today))
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col text-left"><a asp-action="Create" asp-controller="CompetitionJudge" asp-route-id="@ViewData["CompetitionID"]">Add Judge</a></div>
+                <div class="col text-center"><a asp-action="Index" asp-controller="Competition">Return</a></div>
+                <div class="col text-right"><a asp-action="Delete" asp-controller="CompetitionJudge" asp-route-id="@ViewData["CompetitionID"]">Remove Judge</a></div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col text-center"><a asp-action="Index" asp-controller="Competition">Return</a></div>
+            </div>
+        </div>
+
+    }
+    @if (Model.ToList().Count > 0)
+    {
+        <div class="table-responsive">
+            <table id="viewStaff" class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.JudgeID.ToString()</td>
+                            <td>@item.JudgeName </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <span style="color:red">No record found!</span>
+    }
+</fieldset>
