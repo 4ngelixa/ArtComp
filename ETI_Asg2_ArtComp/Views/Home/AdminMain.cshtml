@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Web_Asg.Models.Competition>
+
+@{
+    ViewData["Title"] = "AdminMain";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AssignJudges</title>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col d-flex justify-content-center pb-5">
+                <h1 class="text-start">Welcome to LCU Competitions</h1>
+            </div>
+        </div>
+        <div class="row pb-4">
+            <div class="col d-flex justify-content-center">
+                <h4>Here are some stuff you can do!</h4>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Area Of interests</h4>
+                        <p class="card-text">Click the button below to view the area of interests</p>
+                        <a href="~/AreaInterest/Index" class="btn btn-primary">Go to area interests</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Competitions</h4>
+                        <p class="card-text">Click the button below to view the Competitions</p>
+                        <a href="~/CompCreate/Index" class="btn btn-primary">Go to competitions</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Judges</h4>
+                        <p class="card-text">Click the button below to view the Competition Judges</p>
+                        <a href="~/CompetitionJudge/Index" class="btn btn-primary">Go to competiion judges</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">News</h4>
+                        <p class="card-text">Click the button below to view the News</p>
+                        <a href="~/NewsBlog/Index" class="btn btn-primary">Go to News</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

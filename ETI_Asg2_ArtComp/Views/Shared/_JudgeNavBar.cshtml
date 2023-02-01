@@ -1,0 +1,37 @@
+﻿<!-- A grey navbar that expands horizontally at medium device -->
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+    <!-- The brand(or icon) of the navbar -->
+    <a class="navbar-brand" href="~/Home/Index">
+        <img src="~/images/Index/LionCityLogo.jpg" alt="logo" style="width:40px; height:40px;">
+    </a>
+    <a class="navbar-brand" href="~/Home/Index" style="padding-right:30px">
+        <h4>LCU Competition Board</h4>
+    </a>
+    <!-- Toggle/collapsible Button, also known as hamburger button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#judgeNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links in the navbar, displayed as drop-down list when collapsed -->
+    <div class="collapse navbar-collapse" id="judgeNavbar">
+        <!-- Links that are aligned to the left,
+        mr-auto: right margin auto-adjusted -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="~/NewsBlog/Index">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="~/Judge/ViewCompetition">View Competition</a>
+            </li>
+        </ul>
+        <h4>User: @Context.Session.GetString("Salutation") @Context.Session.GetString("Name")</h4>
+        <!-- Links that are aligned to the right,
+            ml-auto: left margin auto-adjusted -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <!-- A link for logging out user -->
+                <a class="nav-link" href="~/Home/LogOut">Log Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>

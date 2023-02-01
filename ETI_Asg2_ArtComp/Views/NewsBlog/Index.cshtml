@@ -1,0 +1,89 @@
+﻿@model Web_Asg.Models.News
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align:center">News</h1>
+<p style="color:dimgrey">
+    Going through a rut? We believe that current affairs can jolt up and inspire innovative ideas!
+</p>
+
+<div>
+    @if (Model.articles.Count > 0)
+    {
+        <div class="d-flex flex-wrap gap-3">
+            @foreach (Article item in Model.articles)
+            {
+                <div class="card w-100 p-2">
+                    <img class="card-img-top img-thumbnail w-100 h-50" src="@item.urlToImage" alt="Image Unavailable">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.title</h5>
+                        <p class="card-text">@item.description</p>
+                        <a href="@item.url" target="_blank" class="btn btn-primary">Click here to read more</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <h1>no records found</h1>
+    }
+</div>
+
+
+
+            @*<div class="slideShow pb-5">
+
+                    <div class="mySlides">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col col-md-9 shopItem">
+                                <div class="card shadow-lg">
+                                    <img src="products/shirts/naruto_tshirt.jpg" class="card-img-top img-fluid prodImg" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title prodTitle">Naruto T-Shirt</h5>
+                                        <p class="card-text prodDesc">Become the Hokage with this awesome shirt!</p>
+                                        <h4> <span class="text-danger"><del>$20</del></span>  <br>  $<span class="text-success prodPrice">12.00</span></h4>
+                                        <p class="prodType">shirt</p>
+                                        <button type="button" class="btn btn-secondary addToCart">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col col-md-9 shopItem">
+                                <div class="card">
+                                    <img src="products/shirts/green_tshirt.jpg" class="card-img-top img-fluid prodImg" alt="img fail to load">
+                                    <div class="card-body shadow-lg">
+                                        <h5 class="card-title prodTitle">Green T-Shirt</h5>
+                                        <p class="card-text prodDesc">Very Comfortable T-Shirt</p>
+                                        <h4> <span class="text-danger"><del>$20</del></span> <br> $<span class="text-success prodPrice">12.00</span></h4>
+                                        <p class="prodType">shirt</p>
+                                        <button type="button" class="btn btn-secondary addToCart">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col col-md-9 shopItem">
+                                <div class="card shadow-lg">
+                                    <img src="products/kitchen/Wok.jpg" class="card-img-top prodImg" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title prodTitle">Chinese Wok</h5>
+                                        <p class="card-text prodDesc">Very Durable Wok, can be used to cook all your stir fry dishes</p>
+                                        <h4><span class="text-danger"><del>$32</del></span>   <br>     $<span class="text-success prodPrice">12.00</span></h4>
+                                        <p class="prodType">kitchen</p>
+                                        <button type="button" class="btn btn-secondary addToCart">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@

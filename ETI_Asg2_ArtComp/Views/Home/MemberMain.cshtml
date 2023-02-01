@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Member Main Page";
+}
+<!-- ======= Hero Section ======= -->
+<section>
+    @if (Context.Session.GetString("Name") != null)
+    {
+        <div class="pt-5 align-content-center">
+            <h1>Welcome @Context.Session.GetString("Name") to LCU Competitions</h1>
+            <h2>We are a team that helps organize events for the community!</h2>
+        </div>
+        <a asp-action="Index" asp-controller="JoinView" class="btn btn-outline-primary">Get Started</a>
+    }
+    else
+    {
+        <div class="pt-5 align-content-center">
+            <h1>Welcome to LCU Competitions</h1>
+            <h2>We are a team that helps organize events for the community!</h2>
+        </div>
+        <a asp-action="Index" asp-controller="JoinView" class="btn btn-outline-primary">Get Started</a>
+    }
+</section>
