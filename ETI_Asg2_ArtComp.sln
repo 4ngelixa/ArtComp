@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web Asg", "C:\Users\tanla\Downloads\S10205253-web2021apr_p01_t5-47861006765e (2)\S10205253-web2021apr_p01_t5-47861006765e\Web Asg.csproj", "{5E9BAF8C-6907-4A92-BEA5-71FE713217EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETI_Asg2_ArtComp", "C:\Users\tanla\Downloads\S10205253-web2021apr_p01_t5-47861006765e (2)\S10205253-web2021apr_p01_t5-47861006765e\ETI_Asg2_ArtComp.csproj", "{5E9BAF8C-6907-4A92-BEA5-71FE713217EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
