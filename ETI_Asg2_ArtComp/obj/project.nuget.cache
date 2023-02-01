@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IeZaOdTkFVPLyi2QQRRsjZj4aH3J5XiuTJ8SagZtWP4r2dYsfkPrsekXSgAD0pXG2/9uXXPSYK7jpricglTtPA==",
+  "dgSpecHash": "XeP9Ifg/mi+JzDQyAJpoIO6b9VI0dcoJYH84k0j5ai6qtaCnxlRLZUKnpeAIDnzSxFncMf80j1JyQuuCh2eHhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Dropbox\\My PC (LAPTOP-G1GC4NF1)\\Downloads\\ETI ASG2\\WEB2021Apr_P04_T4\\WEB2021Apr_P04_T4.csproj",
+  "projectFilePath": "C:\\Users\\angel\\OneDrive\\Desktop\\Sem 3.2\\Emerging Trends in IT\\ArtComp\\ArtComp\\ETI_Asg2_ArtComp\\ETI_Asg2_ArtComp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

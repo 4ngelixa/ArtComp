@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB2021Apr_P04_T4", "WEB2021Apr_P04_T4\WEB2021Apr_P04_T4.csproj", "{BACE7EF4-3DB9-4788-B5EC-F3051AEA991B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETI_Asg2_ArtComp", "ETI_Asg2_ArtComp\ETI_Asg2_ArtComp.csproj", "{BE204A9F-0AFC-4AC3-A012-3E3E1309FE7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BACE7EF4-3DB9-4788-B5EC-F3051AEA991B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BACE7EF4-3DB9-4788-B5EC-F3051AEA991B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BACE7EF4-3DB9-4788-B5EC-F3051AEA991B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BACE7EF4-3DB9-4788-B5EC-F3051AEA991B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE204A9F-0AFC-4AC3-A012-3E3E1309FE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE204A9F-0AFC-4AC3-A012-3E3E1309FE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE204A9F-0AFC-4AC3-A012-3E3E1309FE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE204A9F-0AFC-4AC3-A012-3E3E1309FE7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
